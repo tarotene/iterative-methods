@@ -16,17 +16,32 @@ These stationary methods are mathematically easy to understand, and we have also
 
 ## Usage
 
-If you clone this repository, you can perform a set of experiments and visualize their results by following the steps on your environment:
-1. a
-2. b
-3. c
+If you clone this repository into your local directory, you can perform a set of experiments and visualize their results by executing the following steps on your environment.
 
-Since the developed environment was (環境), these steps are to be modified according to your specific environment, but the modification would not be so difficult.
+0. On your terminal, move to the root of the cloned repository.
+1. Type `./compile.sh ${alg-id}` to compile a code (in `./src/`).
+2. Type `./execute.sh ${alg-id}` to execute a binary (in `./bin/`).
+3. Check the results in `./res/`, and visualize it by typing `python ./visualize/plot.py`.
+
+The variable `${alg-id}` allows the following values (for example, please see **the sample of executions** below).
+
+- `001-Jacobi`: Solve the equation Ax = b with some typical matrix A and vector b by the **Jacobi method**.
+- `002-Gauss-Seidel`: Solve the equation Ax = b with some typical matrix A and vector b by the **Gauss-Seidel method**.
+- `003-SOR`: Solve the equation Ax = b with some typical matrix A and vector b by the **SOR method**.
+
+\* For seeing the generating scheme of the matrix A and the vector b, please check the actual source codes in `./src/`.
+
+\** The script `./visualize/plot.py` is under the maintainance. You have to make some modifications to it, if you want to effectively visualize the output results.
+
+\*** Since the developed environment was MacOS 10.15.2 (Catalina) and gcc 9.2.0, these steps may have to be modified according to your specific environment, but the modification will not be so difficult.
 
 Try and enjoy your numerical experiments!
 
-## Sample of executions
+## Sample of executions (Jacobi method)
 
-- Jacobi method
+In the default state, the following commands gives the output `./res/001-Jacobi-residue-Poisson.pdf`:
+[001-Jacobi-residue-Poisson.pdf](https://github.com/tarotene/iterative-methods/files/4332344/001-Jacobi-residue-Poisson.pdf)
 
-- SOR method
+1. `./compile.sh 001-Jacobi`
+2. `./execute.sh 001-Jacobi`
+3. `python ./visualize/plot.py`

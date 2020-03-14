@@ -12,9 +12,9 @@ Currently we have completed up to three *stationary* methods:
 2. Gauss-Seidel method,
 3. succesive overrelaxation (SOR) method.
 
-These stationary methods are mathematically easy to understand, and we have also provided the article about their fundamental background (written in Japanese):
+These stationary methods are mathematically easy to understand, and we have also provided the article about their fundamental background:
 
-- [Numerical analysis note: Jacobi method](https://trtn.hatenablog.com/entry/2020/03/14/155616)
+- Numerical analysis note: [Jacobi method](https://trtn.hatenablog.com/entry/2020/03/14/155616) (written in Japanese)
 - under construction
 
 So we do NOT discuss how these algotithms are derived and so on.

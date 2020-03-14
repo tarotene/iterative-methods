@@ -26,7 +26,7 @@ If you clone this repository into your local directory, you can perform a set of
 0. On your terminal, move to the root of the cloned repository.
 1. Type `./compile.sh ${alg-id}` to compile a code (in `./src/`).
 2. Type `./execute.sh ${alg-id}` to execute a binary (in `./bin/`).
-3. Check the results in `./res/`, and visualize it by typing `python ./visualize/plot.py`.
+3. Check the results in `./res/`, and visualize it by typing `python ./visualize/plot.py ${alg-id}`.
 
 The variable `${alg-id}` allows the following values (for example, please see **the sample of executions** below).
 
@@ -48,6 +48,6 @@ In the default state, the following commands gives the output `./res/001-Jacobi-
 
 1. `./compile.sh 001-Jacobi`
 2. `./execute.sh 001-Jacobi`
-3. `python ./visualize/plot.py`
+3. `python ./visualize/plot.py 001-Jacobi`
 
 ![001-Jacobi-residue-Poisson](https://user-images.githubusercontent.com/9128970/76676606-9b548300-6608-11ea-9a89-233b01069b46.png)

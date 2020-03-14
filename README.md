@@ -40,7 +40,8 @@ Try and enjoy your numerical experiments!
 ## Sample of executions (Jacobi method)
 
 In the default state, the following commands gives the output `./res/001-Jacobi-residue-Poisson.pdf`:
-[001-Jacobi-residue-Poisson.pdf](https://github.com/tarotene/iterative-methods/files/4332344/001-Jacobi-residue-Poisson.pdf)
+
+![001-Jacobi-residue-Poisson](https://user-images.githubusercontent.com/9128970/76676606-9b548300-6608-11ea-9a89-233b01069b46.png)
 
 1. `./compile.sh 001-Jacobi`
 2. `./execute.sh 001-Jacobi`

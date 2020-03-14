@@ -2,17 +2,22 @@
 
 ## Overview
 
-This repository is provided for demonstrating several *iterative* algorithms (e.g, Jacobi, SOR, CG, etc.) which mainly solves a system of linear equations with the form Ax = b.
+This repository is provided for demonstrating several *iterative* algorithms (e.g, Jacobi, SOR, CG, etc.) which mainly solve a system of linear equations with the form Ax = b.
 
 Actual implementations are based on the textbook "Templates for the Solution of Linear Systems" written by R.Barrett et al. For more detail, please see the netlib link: http://www.netlib.org/templates/templates.pdf.
 
 Currently we have completed up to three *stationary* methods:
+
 1. Jacobi method,
 2. Gauss-Seidel method,
 3. succesive overrelaxation (SOR) method.
 
 These stationary methods are mathematically easy to understand, and we have also provided the article about their fundamental background (written in Japanese):
-- はてなの記事
+
+- [Numerical analysis note: Jacobi method](https://trtn.hatenablog.com/entry/2020/03/14/155616)
+- under construction
+
+So we do NOT discuss how these algotithms are derived and so on.
 
 ## Usage
 
@@ -41,8 +46,8 @@ Try and enjoy your numerical experiments!
 
 In the default state, the following commands gives the output `./res/001-Jacobi-residue-Poisson.pdf`:
 
-![001-Jacobi-residue-Poisson](https://user-images.githubusercontent.com/9128970/76676606-9b548300-6608-11ea-9a89-233b01069b46.png)
-
 1. `./compile.sh 001-Jacobi`
 2. `./execute.sh 001-Jacobi`
 3. `python ./visualize/plot.py`
+
+![001-Jacobi-residue-Poisson](https://user-images.githubusercontent.com/9128970/76676606-9b548300-6608-11ea-9a89-233b01069b46.png)

@@ -4,7 +4,7 @@
 
 This repository is provided for demonstrating several *iterative* algorithms (e.g, Jacobi, SOR, CG, etc.) which mainly solve a system of linear equations with the form Ax = b.
 
-Actual implementations are based on the textbook "Templates for the Solution of Linear Systems" written by R.Barrett et al. For more detail, please see [the article](http://www.netlib.org/templates/templates.pdf).
+Actual implementations are based on the textbook "[Templates for the Solution of Linear Systems](http://www.netlib.org/templates/templates.pdf)" written by R.Barrett et al.
 
 Currently we have completed up to three *stationary* methods:
 

@@ -18,7 +18,6 @@ int main(int argc, char const *argv[])
 
     /* solve [A] (x) = (b) with given (A, b); where [*] is a matrix, and (*) is a vector */
     double x[N] = {0.0};
-
     for (size_t i = 0; i < N; i++)
     {
         x[i] = 0.1;
@@ -39,11 +38,16 @@ int main(int argc, char const *argv[])
 #pragma omp parallel for num_threads(4) /* Jacobi iteration with OpenMP */
         for (size_t i = 0; i < N; i++)
         {
-            x[i] = b[i] + A[i * N + i] * y[i];
-            for (size_t j = 0; j < N; j++)
+            for (size_t j = 0; j < i; j++)
             {
-                x[i] -= A[i * N + j] * y[j];
+                x[i] -= A[i * N + j] * y[j]; /* use old vector x^(k - 1) */
             }
+
+            for (size_t j = i + 1; j < N; j++)
+            {
+                x[i] -= A[i * N + j] * y[j]; /* use old vector x^(k - 1) */
+            }
+
             x[i] /= A[i * N + i];
         }
 

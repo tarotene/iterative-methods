@@ -14,8 +14,8 @@ Currently we have completed up to three *stationary* methods:
 
 These stationary methods are mathematically easy to understand, and we have also provided the article about their fundamental background:
 
-- Numerical analysis note: [Jacobi method](https://trtn.hatenablog.com/entry/2020/03/14/155616) (written in Japanese)
-- under construction
+- Numerical analysis note 1. [Jacobi method](https://trtn.hatenablog.com/entry/2020/03/14/155616) (written in Japanese)
+- Numerical analysis note 2. [Gauss-Seidel method](https://trtn.hatenablog.com/entry/2020/03/16/191918) (written in Japanese)
 
 So we do NOT discuss how these algotithms are derived and so on.
 
